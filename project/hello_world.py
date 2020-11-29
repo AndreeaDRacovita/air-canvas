@@ -8,5 +8,5 @@ License: CC0-1.0 (Public Domain)
 """
 
 def hello_world():
-    return "Hello World!"
+    print("Hello World!")
 
