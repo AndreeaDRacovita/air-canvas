@@ -3,7 +3,7 @@ import cv2
 
 width = 640
 height = 480
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 cap.set(3, width)
 cap.set(4, height)
 cap.set(10, 150)
@@ -62,3 +62,4 @@ while True:
     cv2.imshow("Virtual Paint", imgResult)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+cv2.destroyAllWindows()
