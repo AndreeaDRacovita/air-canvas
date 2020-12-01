@@ -61,7 +61,7 @@ while True:
     imgResult = img.copy()
     find_color(img, mask_colors)
     draw_on_canvas(painting_points)
-    cv2.imshow("Virtual Paint", imgResult)
+    cv2.imshow("Air Canvas", imgResult)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cv2.destroyAllWindows()
